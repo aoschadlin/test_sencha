@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestSencha</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <%= csrf_meta_tags %>
+  <script type="text/javascript"> 
+    new Ext.Application({
+        launch: function() {
+            new Ext.Panel({
+                fullscreen: true,
+                html: 'Hello World!'
+            });
+        }
+    });
+  </script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
